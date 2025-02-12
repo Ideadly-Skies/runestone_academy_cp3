@@ -13,11 +13,11 @@ class Queue:
         """Add item to the queue"""
         self._items.insert(0, item)
     
-    def dequeue(self, item):
+    def dequeue(self):
         """Remove item from the queue"""
-        self._items.pop()
+        return self._items.pop()
 
     def size(self):
         """Get the number of items in the queue"""
         return len(self._items)
-    
+        
